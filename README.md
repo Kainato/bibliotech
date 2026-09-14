@@ -1,138 +1,50 @@
 # 📚 Bibliotech
 
-Este repositório contém um site de documentação criado com [Docusaurus 2](https://docusaurus.io/), um gerador de sites estáticos moderno baseado em React, projetado para criar documentação de forma rápida e organizada.
+## 🎯 Sobre o Projeto
+
+O **Bibliotech** nasceu da necessidade de centralizar, catalogar e estruturar experimentos, provas de conceito (PoCs), estruturas de projetos e algoritmos isolados que antes ficavam esquecidos em repositórios soltos. 
+
+Em vez de acumular projetos abandonados, este repositório atua como um **hub de conhecimento e referência técnica**: um guia prático para rápida consulta, reutilização de snippets testados e registro da evolução em diferentes tecnologias e padrões de arquitetura.
 
 ---
 
-## 🚀 Começando
+## 🛠️ O que você encontra aqui?
 
-### Pré-requisitos
+O acervo é organizado em categorias modulares para facilitar a navegação:
 
-- [Node.js](https://nodejs.org/) **>= 16**
-- Gerenciador de pacotes **npm** ou **yarn**
-
-Verifique se já estão instalados:
-
-```bash
-node -v
-npm -v
-```
+- 🏗️ **Arquiteturas & Boilerplates:** Estruturas base prontas para iniciar projetos (Clean Architecture, DDD, Modular, MVC, etc.).
+- 💡 **PoCs & Experimentos:** Provas de conceito testando novas bibliotecas, pacotes, integrações e rotas de APIs.
+- ⚡ **Snippets & Utilitários:** Trechos de código performáticos e reutilizáveis para tarefas recorrentes (tratamento de exceções, manipulação de dados, parsers).
+- 🧩 **Design Patterns & Algoritmos:** Implementações práticas de padrões de projeto e desafios de lógica.
+- 📝 **TIL (Today I Learned):** Anotações rápidas e cheatsheets sobre comandos, configurações e sacadas técnicas.
 
 ---
 
-### 📦 Instalação
+## 📂 Estrutura do Repositório
 
-Clone este repositório e instale as dependências:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-npm install
+```text
+bibliotech/
+├── 📂 .vscode/              # Configurações do VS Code
+├── 📂 blog/                 # Artigos, posts e registros de aprendizados
+├── 📂 docs/                 # Documentações e módulos de conhecimento
+├── 📂 src/                  # Componentes React, páginas e estilos do Docusaurus
+│   ├── 📂 components/
+│   ├── 📂 css/
+│   └── 📂 pages/
+├── 📂 static/               # Imagens, arquivos estáticos e assets
+│   ├── 📂 docs/
+│   └── 📂 img/
+├── 📄 docusaurus.config.ts   # Configurações principais do Docusaurus
+├── 📄 sidebars.ts            # Estrutura de navegação da barra lateral
+├── 📄 package.json           # Dependências e scripts do projeto
+└── 📄 README.md              # Documentação principal
 ```
 
-ou com **yarn**:
+## 🔍 Como Navegar e Reutilizar
 
-```bash
-yarn
-```
+Cada pasta neste repositório contém seu próprio arquivo README.md explicativo contendo:
 
----
-
-### ▶️ Ambiente de desenvolvimento
-
-Para iniciar o servidor local de desenvolvimento:
-
-```bash
-npm start
-```
-
-O site ficará disponível em:
-
-```
-http://localhost:3000
-```
-
-O servidor faz *hot reload*, ou seja, mudanças em arquivos são refletidas automaticamente.
-
----
-
-### 📤 Build de Produção
-
-Para gerar os arquivos estáticos do site:
-
-```bash
-npm run build
-```
-
-A saída será gerada na pasta:
-
-```
-build/
-```
-
-Você pode publicar esse conteúdo em qualquer serviço de hospedagem de sites estáticos (Netlify, Vercel, GitHub Pages, etc).
-
-Para testar o build localmente:
-
-```bash
-npm run serve
-```
-
-E acesse:
-
-```
-http://localhost:3000
-```
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash
-.
-├── blog/                 # Postagens de blog em Markdown
-├── docs/                 # Documentação principal em Markdown
-├── src/                  # Código React para customizações
-│   ├── components/       # Componentes React reutilizáveis
-│   └── css/              # Estilos adicionais
-├── static/               # Arquivos estáticos (imagens, favicon, etc.)
-├── docusaurus.config.js  # Configuração principal do site
-├── sidebars.js           # Configuração da sidebar da documentação
-├── package.json          # Dependências e scripts
-└── README.md             # Este arquivo
-```
-
----
-
-## ✨ Customizações
-
-- **Tema:** Você pode personalizar cores, fontes e layout editando `docusaurus.config.js` e `src/css/custom.css`.
-- **Sidebar:** Configure a ordem e a hierarquia dos documentos em `sidebars.js`.
-- **Páginas extras:** Arquivos em `src/pages/` se tornam automaticamente novas rotas no site.
-
----
-
-## 📦 Publicação
-
-Este projeto utiliza a **[Vercel](https://vercel.com/)** para hospedagem.  
-A Vercel é uma plataforma gratuita e prática para publicar sites estáticos ou aplicações front-end, como este projeto em **Docusaurus**.  
-
-⚠️ **Importante:** O processo de deploy (publicação) é responsabilidade do administrador do repositório.  
-Caso seja necessário atualizar a versão publicada, **contate o administrador** para que ele realize o deploy na Vercel.
-
----
-
-## 🛠 Scripts úteis
-
-- `npm start` → Inicia o servidor local de desenvolvimento  
-- `npm run build` → Gera o build de produção  
-- `npm run serve` → Serve o build localmente  
-- `npm run deploy` → Publica no GitHub Pages  
-
----
-
-## 📖 Documentação Oficial
-
-- [Guia Rápido](https://docusaurus.io/docs)
-- [Configurações](https://docusaurus.io/docs/configuration)
-- [Deployment](https://docusaurus.io/docs/deployment)
+1. Contexto / Problema: Qual problema essa PoC ou snippet resolve.
+2. Tecnologias: Linguagens, frameworks e versões utilizadas.
+3. Como Rodar: Comandos simples para testar o código localmente.
+4. Aprendizados Claves: Principais pontos de atenção, trade-offs ou pegadinhas identificadas.
