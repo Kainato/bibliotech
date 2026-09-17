@@ -47,4 +47,4 @@ Cada pasta neste repositório contém seu próprio arquivo README.md explicativo
 1. **Contexto / Problema:** Qual problema essa PoC ou snippet resolve.
 2. **Tecnologias:** Linguagens, frameworks e versões utilizadas.
 3. **Como Rodar:** Comandos simples para testar o código localmente.
-4. **Aprendizados Claves:** Principais pontos de atenção, trade-offs ou pegadinhas identificadas.
+4. **Aprendizados:** Principais pontos de atenção, trade-offs ou pegadinhas identificadas.
