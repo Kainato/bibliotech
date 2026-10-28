@@ -8,7 +8,7 @@ Em vez de acumular projetos abandonados, este repositório atua como um **hub de
 
 ---
 
-## 🛠️ O que você encontra aqui?
+## 🛠️ O que você irá encontrar aqui?
 
 O acervo é organizado em categorias modulares para facilitar a navegação:
 
