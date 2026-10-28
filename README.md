@@ -10,7 +10,7 @@ Em vez de acumular projetos abandonados, este repositório atua como um **hub de
 
 ## 🛠️ O que você irá encontrar aqui?
 
-O acervo é organizado em categorias modulares para facilitar a navegação:
+O projeto é organizado em categorias modulares para facilitar a navegação:
 
 - 🏗️ **Arquiteturas & Boilerplates:** Estruturas base prontas para iniciar projetos (Clean Architecture, DDD, Modular, MVC, etc.).
 - 💡 **PoCs & Experimentos:** Provas de conceito testando novas bibliotecas, pacotes, integrações e rotas de APIs.
