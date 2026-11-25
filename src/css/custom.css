@@ -142,3 +142,96 @@
   --ifm-color-primary-lightest: rgb(255 255 255);
   --docusaurus-highlighted-code-line-bg: rgba(159, 211, 255, 0.1);
 }
+
+/* Navbar: controles superiores sempre claros, independentemente da paleta ativa. */
+.navbar,
+.navbar__brand,
+.navbar__item,
+.navbar__link,
+.navbar__toggle,
+.navbar__toggle svg,
+.navbar-sidebar__brand,
+.navbar-sidebar__close,
+.navbar-sidebar__close svg {
+  --ifm-navbar-link-hover-color: #fff;
+  color: #fff;
+}
+
+.navbar__brand:hover,
+.navbar__link:hover,
+.navbar__toggle:hover,
+.navbar-sidebar__close:hover {
+  color: #fff;
+}
+
+.navbar__toggle svg,
+.navbar-sidebar__close svg,
+.navbar button svg,
+.navbar [class*="toggle"] svg {
+  fill: #fff;
+  color: #fff;
+  stroke: #fff;
+}
+
+.navbar__link--active,
+.navbar__link--active:hover {
+  color: #fff;
+}
+
+/* Ícone da marca e identidade da app */
+.navbar__brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: inline-flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbar__logo img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  max-width: none;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+}
+
+/* Menus laterais e navegação: texto claro, não azul. */
+[data-theme="dark"] {
+  --ifm-link-color: #b8c5d9;
+  --ifm-link-hover-color: #edf3fb;
+  --ifm-menu-color: #d8deea;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-active: rgba(184, 197, 217, 0.1);
+  --ifm-menu-color-background-hover: rgba(184, 197, 217, 0.08);
+}
+
+[data-theme="dark"] .menu__link,
+[data-theme="dark"] .menu__list-item-collapsible,
+[data-theme="dark"] .menu__caret,
+[data-theme="dark"] .table-of-contents__link,
+[data-theme="dark"] .markdown a,
+[data-theme="dark"] .theme-doc-markdown a {
+  color: #b8c5d9;
+}
+
+[data-theme="dark"] .menu__link:hover,
+[data-theme="dark"] .menu__link--active,
+[data-theme="dark"] .menu__link--active:hover,
+[data-theme="dark"] .table-of-contents__link:hover,
+[data-theme="dark"] .table-of-contents__link--active,
+[data-theme="dark"] .markdown a:hover,
+[data-theme="dark"] .theme-doc-markdown a:hover {
+  color: #edf3fb;
+}
+
+[data-theme="dark"] .menu__caret::before,
+[data-theme="dark"] .menu__link--active::before {
+  filter: brightness(0) invert(1);
+}

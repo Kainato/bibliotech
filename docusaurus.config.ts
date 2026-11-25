@@ -85,8 +85,8 @@ const config: Config = {
     navbar: {
       title: "Bibliotech",
       logo: {
-        alt: "BT Logo",
-        src: "img/BT.svg",
+        alt: "Bibliotech",
+        src: "/img/BT.svg",
       },
       items: [
         {
