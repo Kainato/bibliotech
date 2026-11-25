@@ -1,0 +1,46 @@
+---
+sidebar_position: 3
+title: "Prompts e Cenários de Teste"
+---
+
+# 📌 Prompts e Cenários de Teste
+
+> **Resumo em 1 Frase:** Eu vi na prática que a qualidade da resposta da IA depende diretamente da qualidade do prompt e do contexto que eu entrego.
+
+---
+
+## 🎯 1. Conceito-Chave & Objetivos
+- **O que é:** Engenharia de prompt para transformar requisito em cenários positivos, negativos e de borda.
+- **Por que importa:** Eu reduzo respostas genéricas, evito regra inventada e ganho rastreabilidade entre requisito e teste.
+
+---
+
+## 🛠️ 2. Implementação / Prática (O "Como Fazer")
+
+- Eu converto requisito em perguntas: "o que deve acontecer", "o que não pode acontecer" e "quais limites importam".
+- Eu estruturo prompt com 5 elementos: papel, contexto, tarefa, regras e formato de saída.
+- Eu peço explicitamente para não inventar regra e para listar suposições.
+- Eu reviso a saída com foco em cobertura de cenários e aderência ao requisito.
+- Eu uso o caso BugBank como base: cadastro, obrigatoriedade de campos, validações e mensagens esperadas.
+
+##  ℹ️ 3. Destaque Técnico / Estratégico
+
+- Um prompt vago gera cenários vagos; um prompt com contexto e limites gera resultado acionável.
+- Eu deixei de pedir "faz testes" e passei a pedir formato verificável (ex.: ID, pré-condições, passos, resultado esperado, prioridade).
+- A IA não "ficou mais inteligente" entre tentativas: eu que melhorei a instrução.
+
+## 💡 4. Gotchas!
+
+> [!WARNING]
+> Se eu não delimitar regra, a IA pode inferir comportamentos que nunca foram definidos pelo produto.
+
+> [!TIP]
+> Depois da primeira saída, eu peço para a IA criticar o próprio resultado e apontar ambiguidade do requisito.
+
+> [!CAUTION]
+> Cenários longos e sem formato claro dificultam revisão e escondem falhas importantes.
+
+## 🔗 5. Conexões
+
+- Relacionado a: `[Workshop Claude Code — Fundamentos](../03-workshop-claude-code/01-fundamentos)`
+- Relacionado a: `[Figma + IA na Prática — IA no Processo](../06-figma-ia-pratica/02-ia-no-processo)`
